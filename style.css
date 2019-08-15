@@ -1,0 +1,111 @@
+@font-face {
+  font-family: museo_slab;
+  src: url(font/museo_slab_700.otf);
+}
+@font-face {
+  font-family: museo_sans;
+  src: url(font/museo_sans_300.otf);
+}
+body {
+  font-family: museo_sans, helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 250, 232, 1);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: -15px 0;
+}
+header ul{
+  list-style: none;
+}
+header ul li {
+  float: left;
+  padding: 15px 10px;
+}
+header ul li:hover {
+  background-color: rgba(10, 0, 40, 0.8);
+}
+header a {
+  font-size: 20px;
+  color: rgba(10, 0, 40, 1);
+}
+header a:hover {
+  color: rgba(255, 250, 232, 1);
+}
+h2 {
+  position: relative;
+  top: 260px;
+  margin-left: 5%;
+  font-size: 60px;
+  color: white;
+  display: inline;
+  background-color: rgba(10, 0, 40, 0.8);
+}
+h3 {
+  position: relative;
+  top: 280px;
+  margin-left: 5%;
+  font-size: 30px;
+  color: white;
+  display: inline;
+  background-color: rgba(10, 0, 40, 0.8);
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+#taco, #taco img{
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+}
+#taco a:hover h2, #taco a:hover h3{
+  color: rgb(10 0 40);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#filter {
+  float: right;
+}
+#filter p {
+  float: left;
+  margin: 95px 20px 0 0;
+  color: rgba(10, 0, 40, 1);
+}
+.btn {
+  float: left;
+  border: none;
+  margin: 80px 20px -80px 0;
+  padding: 15px;
+  color: rgba(10, 0, 40, 1);
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+.btn:hover {
+  color: rgba(255, 250, 232, 1);
+  background-color: rgba(10, 0, 40, 0.8);
+}
+.btn.active {
+  background-color: rgba(255, 200, 180, 1);
+}
+#container {
+  overflow: hidden;
+}
+.filterDiv {
+  display: none;
+}
+.show {
+  display: block;
+}
+footer{
+  clear: both;
+  margin: 60px 0 20px;
+}
+footer p {
+  font-size: 0.8em;
+  text-align: center;
+}

@@ -1,0 +1,33 @@
+/* #profile {
+  background-image: url(Photo_cover.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+} */
+#profile {
+  margin: 69px 0;
+}
+#profile img {
+  width: 33%;
+  float: left;
+}
+#profile div {
+  width: 29%;
+  float: left;
+  margin: 22% 2%;
+}
+#profile p {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 0px rgba(10, 0, 40, 1);
+}
+#profile img:last-child {
+  margin: 30% 0 5%;
+}
+#client {
+  clear: both;
+  margin-bottom: 40px;
+}
+
+#client img {
+  float: left;
+  max-width: 250px;
+}

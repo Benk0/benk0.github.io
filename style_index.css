@@ -1,0 +1,11 @@
+#taco img {
+  display: none;
+}
+@media (max-width: 1279px) {
+  video {
+    display: none;
+  }
+  #taco img {
+    display: block;
+  }
+}
