@@ -24,10 +24,25 @@
 }
 #client {
   clear: both;
-  margin-bottom: 40px;
+margin-bottom: 40px;
 }
-
-#client img {
+.frame {
   float: left;
+  height: 80px;
+  width: 250px;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1em 0;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#client img {
+  vertical-align: middle;
+  max-height: 80px;
   max-width: 250px;
+  width: auto;
+  height: auto;
 }
