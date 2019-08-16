@@ -17,6 +17,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 3;
   background-color: rgba(255, 255, 255, 0.9);
   margin: -15px 0;
 }
@@ -31,8 +32,13 @@ header ul li:hover {
   background-color: rgba(10, 0, 40, 0.8);
 }
 header a {
-  font-size: 20px;
+  font-size: 40px;
   color: rgba(10, 0, 40, 1);
+}
+@media (min-width: 1280px) {
+  header a {
+    font-size: 20px;
+  }
 }
 header a:hover {
   color: rgba(255, 250, 232, 1);
@@ -44,7 +50,7 @@ h2 {
   font-size: 60px;
   color: white;
   display: inline;
-  background-color: rgba(10, 0, 40, 0.8);
+  background-color: rgba(10, 0, 40, 0.9);
 }
 h3 {
   position: relative;
@@ -53,7 +59,7 @@ h3 {
   font-size: 30px;
   color: white;
   display: inline;
-  background-color: rgba(10, 0, 40, 0.8);
+  background-color: rgba(10, 0, 40, 0.9);
   display: inline-block;
 }
 a {
@@ -66,7 +72,7 @@ a {
 }
 #taco a:hover h2, #taco a:hover h3{
   color: rgb(10 0 40);
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 #filter {
   float: right;
