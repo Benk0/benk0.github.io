@@ -1,13 +1,5 @@
-@font-face {
-  font-family: museo_slab;
-  src: url(font/museo_slab_700.otf);
-}
-@font-face {
-  font-family: museo_sans;
-  src: url(font/museo_sans_300.otf);
-}
 body {
-  font-family: museo_sans, helvetica, arial, sans-serif;
+  font-family: 'Libre Franklin', helvetica, arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgba(255, 250, 232, 1);
@@ -29,7 +21,7 @@ header ul li {
   padding: 15px 10px;
 }
 header ul li:hover {
-  background-color: rgba(10, 0, 40, 0.8);
+  background-color: rgba(10, 0, 40, 0.9);
 }
 header a {
   font-size: 40px;
