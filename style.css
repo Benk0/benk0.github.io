@@ -73,6 +73,7 @@ a {
   float: left;
   margin: 95px 20px 0 0;
   color: rgba(10, 0, 40, 1);
+  font-size: 40px;
 }
 button {
   font-size: 40px;
@@ -114,8 +115,11 @@ footer p {
   header a {
     font-size: 20px;
   }
+  #filter p {
+    font-size: 16px;
+  }
   button {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 header a:hover {
