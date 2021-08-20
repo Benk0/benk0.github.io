@@ -1,6 +1,36 @@
-#taco img {
-  width: 300px;
+body {
+  font-family: 'Libre Franklin', helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(10,0,60);
+  color: rgb(255, 246, 229);
 }
-#taco {
-  background: (10,0,60);
+#taco img {
+  margin-left: 15%;
+  margin-top: 15%;
+  width: 250px;
+  float: left;
+}
+#taco li {
+  display: block;
+  float: left;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 600px;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  color: rgb(10,0,60);
+  text-shadow: -1px -1px 0 rgb(255, 246, 229), 1px -1px 0 rgb(255, 246, 229), -1px 1px 0 rgb(255, 246, 229), 1px 1px 0 rgb(255, 246, 229);
+}
+h2 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  color: rgb(10,0,60);
+  text-shadow: -1px -1px 0 rgb(230, 40, 30), 1px -1px 0 rgb(230, 40, 30), -1px 1px 0 rgb(230, 40, 30), 1px 1px 0 rgb(230, 40, 30);
 }
