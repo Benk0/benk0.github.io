@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Benjamin Gennetay | Splash</title>
+  <title>Benjamin Gennetay | Work</title>
   <link rel="stylesheet" href="style.css" media="screen">
   <link rel="stylesheet" href="style_index.css" media="screen">
   <link rel="icon" type="image/png" href="favicon.png" />
@@ -12,17 +12,158 @@
     <ul>
       <a href="index.html"><li>Work</li></a>
       <a href="about.html"><li>About</li></a>
+      <a href="about.html#client"><li>Clients</li></a>
       <a href="contact.html"><li>Contact</li></a>
     </ul>
   </header>
   <div id="taco">
     <div class="container">
-      <img src="img/bengennetay_logo_recolored.png">
+      <div id="filter">
+          <p>Filter:</p>
+          <button class="btn active" onclick="filterSelection('all')">All projects</button>
+          <button class="btn" onclick="filterSelection('digital')">Digital</button>
+          <button class="btn" onclick="filterSelection('event')">Event</button>
+          <button class="btn" onclick="filterSelection('motion')">Motion</button>
+          <button class="btn" onclick="filterSelection('photography')">Photography</button>
+          <button class="btn" onclick="filterSelection('print')">Print</button>
+      </div>
+      <div class="filterDiv motion">
+        <a class="a"href="lips.html">
+          <h3>&ensp;Take Control Initiative - Animation&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Lips&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/lips_Thumbnail.png">
+            <source src="img/work/lips_animation.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/lips_Thumbnail.png" alt="Check out 'Lips' animation for TCI">
+        </a>
+      </div>
+      <div class="filterDiv event">
+        <a href="subliminal.html">
+          <h3>&ensp;Tulsa Communinity College / TEDx - Event&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Subliminal&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/TEDx_Thumbnail.png">
+            <source src="img/work/TBD_animation.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/TEDx_Thumbnail.png" alt="Check out 'Subliminal' for TEDx">
+        </a>
+      </div>
+      <div class="filterDiv motion">
+        <a class="a" href="hormonefree.html">
+          <h3>&ensp;Take Control Initiative - Animation&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Hormone Free&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/Hormone_Thumbnail.png">
+            <source src="img/work/HormoneFree_preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/Hormone_Thumbnail.png" alt="Check out 'hormone free' for TCI">
+        </a>
+      </div>
+      <div class="filterDiv print photography">
+        <a class="a" href="tas.html">
+          <h3>&ensp;Théâtre Alsacien de Strasbourg - Posters&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Bichromie for bilingual&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/TAS_Thumbnail.jpg">
+            <source src="img/work/TAS_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/TAS_Thumbnail.jpg" alt="Check out 'Bichromie for bilingual' for TAS">
+        </a>
+      </div>
+      <div class="filterDiv digital">
+        <a class="a" href="worryfree.html">
+          <h3>&ensp;Take Control Initiative - Ads&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Worry Free for Free&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/WorryFree_Thumbnail.jpg">
+            <source src="img/work/WorryFree_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/WorryFree_Thumbnail.jpg" alt="Check out 'Worry Free for Free' for TCI">
+        </a>
+      </div>
+      <div class="filterDiv print">
+        <a class="a" href="breastfeeding.html">
+          <h3>&ensp;Communinity Service Council - Print&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Pro Breastfeeding&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/Breastfeeding_Thumbnail.png">
+            <source src="img/work/Breastfeeding_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/Breastfeeding_Thumbnail.png" alt="Check out 'Pro Breastfeeding' for CSC">
+        </a>
+      </div>
+      <div class="filterDiv print">
+        <a class="a" href="size_matters.html">
+          <h3>&ensp;Take Control Initiative - Posters&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Size does matter&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/SizeMatter_Thumbnail.png">
+            <source src="" type="video/mp4">
+          </video>
+          <img src="img/work/SizeMatter_Thumbnail.png" alt="Check out 'Size does matter' for TCI">
+        </a>
+      </div>
+      <div class="filterDiv event print">
+        <a class="a" href="halloween.html">
+          <h3>&ensp;French Language Association - Event&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Halloween&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/Halloween_Thumbnail.jpg">
+            <source src="img/work/Halloween_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/Halloween_Thumbnail.jpg" alt="Check out 'Halloween' for FLA">
+        </a>
+      </div>
+      <div class="filterDiv digital">
+        <a class="a" href="TCIwebsite.html">
+          <h3>&ensp;Take Control Initiative - Website&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Web Design&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/TCIWeb_Thumbnail.png">
+            <source src="" type="video/mp4">
+          </video>
+          <img src="img/work/TCIWeb_Thumbnail.png" alt="Check out TCI's website">
+        </a>
+      </div>
+      <div class="filterDiv print">
+        <a class="a" href="ADCTmailer.html">
+          <h3>&ensp;Art Directors Club of Tulsa - Mailer&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;ShopTalk&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/ShopTalk_Thumbnail.png">
+            <source src="img/work/ShopTalk_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/ShopTalk_Thumbnail.png" alt="Check out the mailer for the ADCT's ShopTalk at TPSi">
+        </a>
+      </div>
+      <div class="filterDiv digital event motion">
+        <a class="a" href="larc_event.html">
+          <h3>&ensp;Take Control Initiative - Event&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;LARC Lunch & Learn&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/LARC_Thumbnail.png">
+            <source src="img/work/LARC_preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/LARC_Thumbnail.png" alt="Check out 'LARC Lunch & Learn' for TCI">
+        </a>
+      </div>
+      <div class="filterDiv digital motion photography">
+        <a class="a" href="workout.html">
+          <h3>&ensp;Take Control Initiative - Ads&ensp;</h3>
+          <div></div>
+          <h2>&thinsp;Active birth control&thinsp;</h2>
+          <video class="video" loop muted playsinline poster="img/work/Workout_Thumbnail.jpg">
+            <source src="img/work/Workout_Preview.mp4" type="video/mp4">
+          </video>
+          <img src="img/work/Workout_Thumbnail.jpg" alt="Check out 'Active Birth Control' for TCI">
+        </a>
+      </div>
     </div> <!-- end of container -->
   </div> <!-- end of taco -->
 <footer>
   <p>
-    Benjamin Gennetay © 2021
+    Benjamin Gennetay © 2019
   </p>
 </footer>
   <script>
