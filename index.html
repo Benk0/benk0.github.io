@@ -11,83 +11,91 @@
   <div id="taco">
     <div class="container">
       <img src="img/bengennetay_logo_recolored.png" alt="Personal Logo">
+    </div>
+    <div class="container">
       <h1>BENJAMIN GENNETAY</h1>
       <h2>GRAPHIC DESIGNER</h2>
       <h2>MOTION DESIGNER</h2>
       <h2>WEB DESIGNER</h2>
-      <ul>
-        <li>Contact:</li>
-        <li><a href="mailto:benjamin.gennetay@gmail.com">benjamin.gennetay@gmail.com</a></li>
-      </ul>
     </div> <!-- end of container -->
+    <div class="container">
+      <h3>Contact</h3>
+      <div id="error_message">
+      </div>
+      <form action="" id="myform" onsubmit = "return validate();">
+        <div class="input_field">
+            <input type="text" placeholder="First name" id="fname" name="firstname">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Last name" id="lname" name="lastname">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Company" id="company" name="company">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Subject" id="subject">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <div class="input_field">
+            <textarea placeholder="Message" id="message"></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
   </div> <!-- end of taco -->
-<footer>
-  <p>
-    Benjamin Gennetay © 2021
-  </p>
-</footer>
+  <footer>
+    <p>
+      Benjamin Gennetay © 2021
+    </p>
+  </footer>
   <script>
-    let anchorElements = document.getElementsByClassName("a");
+    function validate(){
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var subject = document.getElementById("subject").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var error_message = document.getElementById("error_message");
 
-    for(let i = 0; i < anchorElements.length; i++) {
-      let videoElement = anchorElements[i].getElementsByClassName("video")[0];
+    error_message.style.padding = "10px";
 
-      anchorElements[i].onmouseenter = () => {
-        videoElement.currentTime = 0;
-        videoElement.play();
-      };
-
-      anchorElements[i].onmouseleave = () => {
-        videoElement.pause();
-        videoElement.currentTime = 0;
-      };
+    var text;
+    if(fname.length < 2){
+      text = "Please add your first name";
+      error_message.innerHTML = text;
+      return false;
     }
-    filterSelection("all")
-    function filterSelection(c) {
-      var x, i;
-      x = document.getElementsByClassName("filterDiv");
-      if (c == "all") c = "";
-      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-      for (i = 0; i < x.length; i++) {
-        w3RemoveClass(x[i], "show");
-        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-      }
+    if(lname.length < 2){
+      text = "Please add your last name";
+      error_message.innerHTML = text;
+      return false;
     }
-
-    // Show filtered elements
-    function w3AddClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        if (arr1.indexOf(arr2[i]) == -1) {
-          element.className += " " + arr2[i];
-        }
-      }
+    if(subject.length < 2){
+      text = "Please add a subject";
+      error_message.innerHTML = text;
+      return false;
     }
-
-    // Hide elements that are not selected
-    function w3RemoveClass(element, name) {
-      var i, arr1, arr2;
-      arr1 = element.className.split(" ");
-      arr2 = name.split(" ");
-      for (i = 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-          arr1.splice(arr1.indexOf(arr2[i]), 1);
-        }
-      }
-      element.className = arr1.join(" ");
+    if(email.indexOf("@") == -1 || email.length < 6){
+      text = "Please enter valid email";
+      error_message.innerHTML = text;
+      return false;
     }
-
-    // Add active class to the current control button (highlight it)
-    var btnContainer = document.getElementById("filter");
-    var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
+    if(message.length >= 200){
+      text = "Please add a brief message";
+      error_message.innerHTML = text;
+      return false;
+    }
+    if(message.length <= 10){
+      text = "Please add a message";
+      error_message.innerHTML = text;
+      return false;
+    }
+    alert("Form Submitted Successfully!");
+    return true;
   }
   </script>
 </body>
