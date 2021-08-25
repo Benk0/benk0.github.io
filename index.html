@@ -22,24 +22,24 @@
       <h3>Contact</h3>
       <div id="error_message">
       </div>
-      <form action="" id="myform" onsubmit = "return validate();">
+      <form id="contact_form" method="post" name="contact_form" onsubmit = "return validate();" action="https://formsubmit.co/benjamin.gennetay@gmail.com">
         <div class="input_field">
-            <input type="text" placeholder="First name" id="fname" name="firstname">
+          <input type="text" placeholder="First name" id="fname" name="firstname">
         </div>
         <div class="input_field">
-            <input type="text" placeholder="Last name" id="lname" name="lastname">
+          <input type="text" placeholder="Last name" id="lname" name="lastname">
         </div>
         <div class="input_field">
-            <input type="text" placeholder="Company" id="company" name="company">
+          <input type="text" placeholder="Company" id="company" name="company">
         </div>
         <div class="input_field">
-            <input type="text" placeholder="Subject" id="subject">
+          <input type="text" placeholder="Email" id="email" name="email">
         </div>
         <div class="input_field">
-            <input type="text" placeholder="Email" id="email">
+          <input type="text" placeholder="Subject" id="subject" name="subject">
         </div>
         <div class="input_field">
-            <textarea placeholder="Message" id="message"></textarea>
+          <textarea placeholder="Message" id="message" name="message"></textarea>
         </div>
         <div class="btn">
           <input type="submit" value="Submit">
@@ -52,7 +52,7 @@
       Benjamin Gennetay © 2021
     </p>
   </footer>
-  <script>
+  <script Language="JavaScript">
     function validate(){
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
